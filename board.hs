@@ -66,10 +66,10 @@ boardAsPicture board =
 
 boardAsGameOverPicture winner board = color (backgroundColor1 winner) (boardAsPicture board)
 
--- gameAsPicture :: Game -> Picture
--- gameAsPicture game = translate (fromIntegral screenWidth * (-0.5))
---                                (fromIntegral screenHeight * (-0.5))
---                                frame
---     where frame = case gameState game of
---                     Running -> boardAsRunningPicture (gameBoard game)
---                     GameOver winner -> boardAsGameOverPicture winner (gameBoard game)
+gameAsPicture :: Game -> Picture
+gameAsPicture game = translate (fromIntegral screenWidth * (-0.5))
+                               (fromIntegral screenHeight * (-0.5))
+                               frame
+    where frame = case gameState game of
+                    Running -> boardAsRunningPicture (gameBoard game)
+                    GameOver winner -> boardAsGameOverPicture winner (gameBoard game)

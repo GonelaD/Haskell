@@ -28,8 +28,8 @@ cellWidth = fromIntegral screenWidth / fromIntegral n
 cellHeight :: Float
 cellHeight = fromIntegral screenHeight / fromIntegral n
 
--- initialGame = Game { gameBoard = array indexRange $ zip (range indexRange) (repeat Nothing)
---                    , gamePlayer = PlayerO1
---                    , gameState = Running
---                    }
--- 	where indexRange = ((0, 0), (6 , 6))
+initialGame = Game { gameBoard = array indexRange $ zip (range indexRange) (repeat Nothing)
+                   , gamePlayer = PlayerO1
+                   , gameState = Running
+                   }
+	where indexRange = ((0, 0), (6 , 6))
