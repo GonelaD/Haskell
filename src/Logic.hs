@@ -1,4 +1,4 @@
-module Logic1 where
+module Logic where
 
 import Data.Array
 import Data.Foldable ( asum )
