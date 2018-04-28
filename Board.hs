@@ -4,7 +4,7 @@ import Data.Array
 
 import Graphics.Gloss
 
-import game
+import Game
 
 boardGridColor = makeColorI 255 255 255 255
 playerO1Color = makeColorI 255 50 50 255

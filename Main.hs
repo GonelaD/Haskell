@@ -3,8 +3,9 @@ module Main where
 import Graphics.Gloss
 import Graphics.Gloss.Data.Color
 
-import game
-import board
+import Game
+import Board
+import Logic
 
 window = InWindow "Functional" (screenWidth, screenHeight) (100, 100)
 backgroundColor = makeColor 0 0 0 255
