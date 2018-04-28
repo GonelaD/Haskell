@@ -1,4 +1,4 @@
-module Rendering where
+module Board where
 
 import Data.Array
 
