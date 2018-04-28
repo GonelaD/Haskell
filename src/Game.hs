@@ -15,19 +15,19 @@ data Game = Game { gameBoard :: Board
 
 n :: Int
 n=7
-
+-- |Sets the ScreenWidth to 720
 screenWidth :: Int
 screenWidth = 720
-
+-- |Sets the ScreenHeight to 720
 screenHeight :: Int
 screenHeight = 720
-
+-- |Sets the Width of each cell corresponding to Screen width
 cellWidth :: Float
 cellWidth = fromIntegral screenWidth / fromIntegral n
-
+-- |Sets the height of each cell correspnding to Screen Height
 cellHeight :: Float
 cellHeight = fromIntegral screenHeight / fromIntegral n
-
+-- |Sets the Initial Game State
 initialGame = Game { gameBoard = array indexRange $ zip (range indexRange) (repeat Nothing)
                    , gamePlayer = PlayerO1
                    , gameState = Running
