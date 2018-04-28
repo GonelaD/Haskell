@@ -1,4 +1,4 @@
 *.o
 *.hi
-*.gif
-*.png
+docs/*.png
+docs/*.gif
